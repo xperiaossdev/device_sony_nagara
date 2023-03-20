@@ -142,26 +142,17 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     audioadsprpcd \
-    liba2dpoffload \
     libaudiopreprocessing \
     libbatterylistener \
     libbundlewrapper \
-    libcirrusspkrprot \
-    libcomprcapture \
     libdownmix \
     libdynproc \
     libeffectproxy \
-    libexthwplugin \
-    libhdmiedid \
-    libhfp \
     libldnhncr \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libreverbwrapper \
-    libsndmonitor \
-    libspkrprot \
-    libssrec \
     libvisualizer \
     libvolumelistener
 
@@ -266,7 +257,6 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
     libqdMetaData \
     libtinyxml \
-    android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
@@ -275,8 +265,6 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system \
     libsdmcore \
     libsdmutils \
-    memtrack.default \
-    libmemutils \
     vendor.display.config@1.5 \
     vendor.display.config@1.15.vendor \
     vendor.display.config@2.0 \
@@ -402,12 +390,6 @@ PRODUCT_PACKAGES += \
 
 # OMX
 PRODUCT_PACKAGES += \
-    libOmxAacEnc \
-    libOmxAmrEnc \
-    libOmxCore \
-    libOmxEvrcEnc \
-    libOmxG711Enc \
-    libOmxQcelp13Enc \
     libstagefrighthw
 
 # Power
