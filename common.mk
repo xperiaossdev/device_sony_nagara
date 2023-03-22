@@ -130,8 +130,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.soundtrigger@2.3-impl \
     tinyplay \
-    tinymix \
-    audio_amplifier.taro
+    tinymix 
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
