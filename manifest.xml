@@ -1,4 +1,4 @@
-<manifest version="4.0" type="device" target-level="6">
+<manifest version="2.0" type="device" target-level="6">
     <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
@@ -168,16 +168,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@4.0::IBiometricsFingerprintRbs/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.nxp.nxpese</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>INxpEse</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::INxpEse/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.nxp.nxpnfc</name>
@@ -556,26 +546,6 @@
         <fqname>@2.5::IFramerateController/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.semc.hardware.mmwavedirection</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IMmwavedirection</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IMmwavedirection/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.semc.hardware.thermal</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>ISomcThermalEngineWrapper</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.1::ISomcThermalEngineWrapper/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.somc.hardware.ifaa</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -596,16 +566,6 @@
         <fqname>@1.0::IMisctaGlobal/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.somc.hardware.nfc</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISomcNfc</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ISomcNfc/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.somc.hardware.security.secd</name>
         <transport>hwbinder</transport>
         <version>1.1</version>
@@ -614,16 +574,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.1::IDeviceSecurity/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.somc.hardware.superstamina</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISuperStamina</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ISuperStamina/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.somc.hardware.swiqi</name>
@@ -635,25 +585,4 @@
         </interface>
         <fqname>@1.0::IHidlSwiqi/default</fqname>
     </hal>
-    <hal format="hidl">
-        <name>vendor.somc.hardware.tgpa_boost</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ITgpaBoost</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ITgpaBoost/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.somc.hardware.wifidriver</name>
-        <transport>hwbinder</transport>
-        <version>2.1</version>
-        <interface>
-            <name>ISomcWifiDriver</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.1::ISomcWifiDriver/default</fqname>
-    </hal>
-    <kernel target-level="6"/>
 </manifest>
