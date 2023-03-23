@@ -136,8 +136,7 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     audio.primary.taro \
     audio.r_submix.default \
-    audio.usb.default \
-    sound_trigger.primary.taro
+    audio.usb.default 
 
 PRODUCT_PACKAGES += \
     audioadsprpcd \
@@ -218,6 +217,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.qcom.class_core.sh \
+    init.kernel.post_boot-cape.sh \
+    init.kernel.post_boot-diwali.sh \
+    init.kernel.post_boot-taro.sh \
+    init.kernel.post_boot.sh \
     init.qcom.early_boot.sh \
     init.qcom.msim.sh \
     init.qcom.factory.rc \

@@ -85,7 +85,6 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_RAMDISK_USE_LZ4 := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_NO_GCC := true
-TARGET_USES_KERNEL_PLATFORM := true
 
 # Kernel modules
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(COMMON_PATH)/modules.blocklist
@@ -96,6 +95,7 @@ TARGET_MODULE_ALIASES += wlan.ko:qca_cld3_wlan.ko
 
 # Platform
 TARGET_BOARD_PLATFORM := taro
+TARGET_NO_BOOTLOADER := true
 BOARD_USES_QCOM_HARDWARE := true
 
 # ANT+
@@ -119,8 +119,6 @@ BOARD_USES_ALSA_AUDIO := true
 TARGET_USES_QCOM_MM_AUDIO := true
 USE_CUSTOM_AUDIO_POLICY := 1
 
-BOARD_SUPPORTS_OPENSOURCE_STHAL := true
-
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth
 
@@ -141,10 +139,6 @@ TARGET_USES_GRALLOC1 := true
 TARGET_USES_GRALLOC4 := true
 TARGET_USES_HWC2 := true
 TARGET_USES_ION := true
-
-SOONG_CONFIG_qtidisplay += \
-    gralloc_handle_has_reserved_size
-SOONG_CONFIG_qtidisplay_gralloc_handle_has_reserved_size := true
 
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
