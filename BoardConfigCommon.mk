@@ -91,6 +91,12 @@ TARGET_KERNEL_CONFIG += \
 	gki_defconfig \
 	vendor/waipio_GKI.config
 
+# Use External DTC
+TARGET_KERNEL_ADDITIONAL_FLAGS := \
+    DTC_EXT=$(shell pwd)/kernel/prebuilts/build-tools/linux-x86/bin/dtc \
+    DTC_OVERLAY_TEST_EXT=$(shell pwd)/kernel/prebuilts/build-tools/linux-x86/bin/ufdt_apply_overlay \
+    LLVM=1 LLVM_IAS=1
+
 # Kernel modules
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(COMMON_PATH)/modules.blocklist
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load))
