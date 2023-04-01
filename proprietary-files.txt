@@ -434,14 +434,22 @@ vendor/etc/init/vendor.semc.hardware.display@2.5-service.rc
 vendor/bin/qdcmss
 vendor/etc/init/qdcmss.rc
 vendor/etc/snapdragon_color_libs_config.xml
-vendor/lib64/libdpps.so
-vendor/lib64/libqdcm-mode-parser.so
 vendor/lib/libdpps.so
-vendor/lib64/libdpps.so
+vendor/lib/libdigital-dimming.so
+vendor/lib/libgame_enhance.so
+vendor/lib/libqdcm-json-mode-parser.so
+vendor/lib/libqdcm-mode-parser.so
+vendor/lib/libdpps.so
+vendor/lib64/libdigital-dimming.so
+vendor/lib64/libgame_enhance.so
+vendor/lib64/libqdcm-algo.so
+vendor/lib64/libqdcm-json-mode-parser.so
+vendor/lib64/libqdcm-mode-parser.so
 vendor/lib64/libsnapdragoncolor-manager.so
 vendor/lib64/libsnapdragoncolor-qdcm.so
 
 # Display (HDR)
+vendor/lib64/libhdr_backlight_adapter.so
 vendor/lib64/libhdr_tm.so
 
 # Display (SDM)
