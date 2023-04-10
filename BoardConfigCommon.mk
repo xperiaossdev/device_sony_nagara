@@ -18,7 +18,7 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 BOARD_VENDOR := sony
 
-COMMON_PATH := device/sony/sm8450-common
+COMMON_PATH := device/sony/nagara
 
 # A/B
 AB_OTA_UPDATER := true
@@ -85,7 +85,7 @@ BOARD_RAMDISK_USE_LZ4 := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_NO_GCC := true
 
-TARGET_KERNEL_SOURCE := kernel/sony/sm8450
+TARGET_KERNEL_SOURCE := kernel/sony/nagara
 TARGET_KERNEL_CONFIG += \
 	gki_defconfig \
 	vendor/waipio_GKI.config
@@ -159,7 +159,7 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/configs/config/config.fs
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(COMMON_PATH)/configs/vintf/framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/aosp/config/device_framework_matrix.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/vintf/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/vintf/manifest.xml
 
@@ -258,4 +258,4 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
-include vendor/sony/nagara/sm8450-common/BoardConfigVendor.mk
+include vendor/sony/nagara/common/BoardConfigVendor.mk
